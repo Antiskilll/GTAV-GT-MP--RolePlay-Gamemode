@@ -1,0 +1,6 @@
+E:\GTMP\server\resources\lsrpvfr\bin\LSRP_VFR.dll.config
+E:\GTMP\server\resources\lsrpvfr\bin\LSRP_VFR.dll
+E:\GTMP\server\resources\lsrpvfr\bin\LSRP_VFR.pdb
+E:\DEV_FOLDER\GitHub\GTARP\AdAstraRP\obj\Release\LSRP_VFR.dll
+E:\DEV_FOLDER\GitHub\GTARP\AdAstraRP\obj\Release\LSRP_VFR.pdb
+E:\DEV_FOLDER\GitHub\GTARP\AdAstraRP\obj\Release\LSRP_VFR.csprojResolveAssemblyReference.cache

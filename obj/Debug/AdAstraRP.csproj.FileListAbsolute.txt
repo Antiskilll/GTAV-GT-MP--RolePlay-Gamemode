@@ -1,0 +1,6 @@
+E:\GTANetwork\server\resources\AdAstraRP\bin\AdAstraRP.dll.config
+E:\GTANetwork\server\resources\AdAstraRP\bin\AdAstraRP.dll
+E:\GTANetwork\server\resources\AdAstraRP\bin\AdAstraRP.pdb
+E:\DEV_FOLDER\GitHub\GTARP\AdAstraRP\obj\Debug\AdAstraRP.csprojResolveAssemblyReference.cache
+E:\DEV_FOLDER\GitHub\GTARP\AdAstraRP\obj\Debug\AdAstraRP.dll
+E:\DEV_FOLDER\GitHub\GTARP\AdAstraRP\obj\Debug\AdAstraRP.pdb

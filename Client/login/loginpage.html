@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <style type="text/css">
+            body {
+                background-color: #d2d2d2;
+            }
+
+            h1 {
+                font-family: Oswald;
+                font-size: 25px;
+                font-style: normal;
+                font-variant: normal;
+                font-weight: 500;
+                line-height: 25px;
+                color: #1e3d57;
+            }
+
+            .logo {
+                margin: auto;
+                margin-top: 10px;
+                height: 152px;
+                width: 240px;
+            }
+
+            .centered {
+                margin: auto;
+                text-align: center;
+                vertical-align: middle;
+                margin-top: 15px;
+            }
+
+            a.button {
+                -webkit-appearance: button;
+                -moz-appearance: button;
+                appearance: button;
+                border-style: solid;
+                border-width: 0px 0px 3px;
+                box-shadow: 0 -1px 0 rgba(255, 255, 255, 0.1) inset;
+                color: white;
+                background-color: #1e3d57;
+                border-radius: 6px;
+                cursor: pointer;
+                display: inline-block;
+                font-style: normal;
+                overflow: hidden;
+                text-align: center;
+                text-decoration: none;
+                text-overflow: ellipsis;
+                transition: all 200ms ease-in-out 0s;
+                white-space: nowrap;
+                font-family: Helvetica, Arial, sans-serif;
+                font-weight: 700;
+                padding: 19px 39px 18px;
+                font-size: 18px;
+            }
+
+            a.quitbutton {
+                -webkit-appearance: button;
+                -moz-appearance: button;
+                appearance: button;
+                border-style: solid;
+                border-width: 0px 0px 3px;
+                box-shadow: 0 -1px 0 rgba(255, 255, 255, 0.1) inset;
+                color: white;
+                background-color: #702121;
+                border-radius: 6px;
+                cursor: pointer;
+                display: inline-block;
+                font-style: normal;
+                overflow: hidden;
+                text-align: center;
+                text-decoration: none;
+                text-overflow: ellipsis;
+                transition: all 200ms ease-in-out 0s;
+                white-space: nowrap;
+                font-family: Helvetica, Arial, sans-serif;
+                font-weight: 700;
+                padding: 19px 39px 18px;
+                font-size: 18px;
+            }
+
+            .information {
+                padding: 20px;
+                background-color: #4A82FF;
+                color: #FFF;
+                margin-bottom: 15px;
+            }
+
+            .closebtn {
+                margin-left: 15px;
+                color: #FFF;
+                font-weight: bold;
+                float: right;
+                font-size: 22px;
+                line-height: 20px;
+                cursor: pointer;
+                transition: .3s;
+            }
+
+            .closebtn:hover {
+                color: #000;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div id="login-form">
+            <div id="message" style="display:none">
+            </div>
+            <div class="logo">
+                <img src="logo.png">
+            </div>
+            <div class="centered">
+                <h1>CONNEXION</h1>
+                <br>
+                <input id="password" type="password" placeholder="Mot de passe" required autofocus>
+                <br><br>
+                <a href="#" id="loginbutton" class="button">CONNEXION</a>
+                <br><br>
+                <a href="#" id="discbutton" class="quitbutton">DECONNEXION</a>
+            </div>
+        </div>
+        <script>
+            document.getElementById("loginbutton").onclick = function() {
+                document.getElementById('message').style.display = "none";
+                var password = document.getElementById("password").value;
+                if (password.length == 0) {
+                    showMessage('Veuillez saisir un mot de passe.');
+                    return;
+                }
+                resourceCall("login", password);
+            };
+            document.getElementById("discbutton").onclick = function() {
+                resourceCall("sendDisconnect");
+            };
+
+            function showMessage(message) {
+                document.getElementById('message').style.display = "block";
+                document.getElementById('message').innerHTML = '<div class="information">' + message + '</div>';
+            }
+        </script>
+    </body>
+
+</html>

@@ -1,0 +1,60 @@
+﻿<meta>
+  <info name="AdAstra Roleplay" author="Djoe45" type="gamemode" async="true"/>
+  <assembly ref="System.Data.dll"/>
+  <assembly ref="MySql.Data.dll"/>
+  <assembly ref="System.Xml.dll" />
+  <assembly ref="System.Xml.Linq.dll" />
+
+  <include resource="doormanager" />
+
+  <script src="/bin/AdAstraRP.dll" type="server" lang="compiled" />
+
+  <script src="/Client/character.js" type="client" lang="javascript" />
+  <script src="/Client/faction/menulspd.ts" type="client" lang="javascript" />
+  <script src="/Client/job/taxi.js" type="client" lang="javascript" />
+  <script src="/Client/menumanager.js" type="client" lang="javascript" />
+  <script src="/Client/blipmarkermanager.js" type="client" lang="javascript" />
+  <script src="/Client/adminmenu.js" type="client" lang="javascript" />
+  <script src="/Client/server_subtitle.js" type="client" lang="javascript" />
+  <script src="/Client/serversidecamera.js" type="client" lang="javascript" />
+  <script src="/Client/login.js" type="client" lang="javascript" />
+  <script src="/Client/speedometer.js" type="client" lang="javascript" />
+  <script src="/Client/medic.js" type="client" lang="javascript" />
+  <script src="/Client/gamemanager.js" type="client" lang="javascript" />
+  <script src="/Client/survival.js" type="client" lang="javascript" />
+  <script src="/Client/ceilmanager.js" type="client" lang="javascript" />
+  <script src="/Client/clothing.ts" type="client" lang="javascript" />
+  <script src="/Client/interaction.js" type="client" lang="javascript" />
+  <script src="/Client/teamspeak.js" type="client" lang="javascript" />
+
+  <!-- HTML -->
+  <file src="/Client/login/loginpage.html" />
+
+  <!-- Assets -->
+  <file src="/Client/login/logo.png" />
+  <file src="/Client/hud/coeur.png" />
+  <file src="/Client/hud/faim.png" />
+  <file src="/Client/hud/soda.png" />
+  <file src="/Client/hud/mic1.png" />
+  <file src="/Client/hud/mic2.png" />
+  <file src="/Client/hud/mic3.png" />
+
+  <settings>
+    <!-- Settings Mysql -->
+    <setting name="host" value="164.132.200.96" />
+    <setting name="user" value="gtavdev" />
+    <setting name="password" value="99QDRJOJ1JNRXKf4" />
+    <setting name="database" value="GtaDev" />
+    <setting name="port" value="3406" />
+
+    <!-- Settings Divers -->
+    <setting name="WinterMod" value="false" />
+    <setting name="EssencePrice" value="1" />
+    <setting name="Housing_Sell_Price_Demult" value="2" />
+
+    <!-- Settings Players -->
+    <setting name="MoneyStart" value="500" />
+    <setting name="BankMoneyStart" value="50000" />
+  </settings>
+
+</meta>
