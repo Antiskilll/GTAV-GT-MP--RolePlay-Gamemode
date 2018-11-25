@@ -61,7 +61,7 @@ namespace LSRP_VFR
 
         // Colshape
 
-        //Ajouter un Colshape a la liste
+        //Änderung der ColShpes
         internal static void AddColshape(ColShape colshape)
         {
             _ColShape.Add(colshape);
